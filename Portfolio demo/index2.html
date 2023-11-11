@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Trial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="header">
+            <img src="figma-images/Logo.png" class="logo" />
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active" onclick="changeActiveClass(this)">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a href="#work" class="nav-link" onclick="changeActiveClass(this)">WORK</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link" onclick="changeActiveClass(this)">ABOUT</a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-text">
+            <h1>
+              I’m a designer specializing in <span>UI/UX</span> and
+              <span>Interaction Design</span>
+            </h1>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <div class="client-details">
+        <div class="container">
+          <div class="client-layout">
+            <h2 class="text">
+              Some of <span>the clients I have designed for</span>
+            </h2>
+            <div class="images">
+              <img
+                src="figma-images/airbnb-colored.png"
+                alt="Airbnb Logo"
+              /><img
+                src="figma-images/google-colored.png"
+                alt="Google Logo"
+              /><img
+                src="figma-images/Microsoft-colored.png"
+                alt="Microsoft Logo"
+              /><img src="figma-images/Fedex-colored.png" alt="Fedex Logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="work" id="work">
+        <div class="container">
+          <div class="work-layout">
+            <h2 class="text">Selected <span>Works</span></h2>
+            <div class="projects">
+              <div class="card one">
+                <img src="figma-images/project 1.png" alt="First Project" />
+                <div class="project-details">
+                  <h3 class="p-title">REAL ESTATE TEMPLATE</h3>
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur
+                    <span>
+                      adipisicing elit. Eos consequatur non ipsum expedita.
+                      Illo, officia.
+                    </span>
+                  </p>
+                  <p class="desc mode">Website Design</p>
+                  <button id="button">
+                    VIEW WORK
+                    <i class="fa-solid fa-angle-right" id="angle-right"></i>
+                    <i class="fa-solid fa-arrow-right custom"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card two">
+                <img src="figma-images/project 2.png" alt="Second Project" />
+                <div class="project-details">
+                  <h3 class="p-title">PLANT IDENTIFICATION APP</h3>
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur
+                    <span>
+                      adipisicing elit. Eos consequatur non ipsum expedita.
+                      Illo, officia.
+                    </span>
+                  </p>
+                  <p class="desc mode">Mobile App</p>
+                  <button id="button">
+                    VIEW WORK
+                    <i class="fa-solid fa-angle-right" id="angle-right"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card one">
+                <img src="figma-images/project 3.png" alt="Third Project" />
+                <div class="project-details">
+                  <h3 class="p-title">SMART HOME APP</h3>
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur
+                    <span>
+                      adipisicing elit. Eos consequatur non ipsum expedita.
+                      Illo, officia.
+                    </span>
+                  </p>
+                  <p class="desc mode">Mobile App</p>
+                  <button id="button">
+                    VIEW WORK
+                    <i class="fa-solid fa-angle-right" id="angle-right"> </i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="card two">
+                <img src="figma-images/project 4.png" alt="Fourth Project" />
+                <div class="project-details">
+                  <h3 class="p-title">LOGO ANIMATION</h3>
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur
+                    <span>
+                      adipisicing elit. Eos consequatur non ipsum expedita.
+                      Illo, officia.
+                    </span>
+                  </p>
+                  <p class="desc mode">Animation</p>
+                  <button id="button">
+                    VIEW WORK
+                    <i class="fa-solid fa-angle-right" id="angle-right"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container about-layout">
+          <div class="about-client">
+            <h2 class="text"><span>A BIT ABOUT ME</span></h2>
+            <p class="client-description">
+              I am a UI/UX designer who is passionate about creating
+              <span
+                >beautiful and joyful digital experiences. Besides design, I
+                love music, games and travelling.</span
+              >
+            </p>
+          </div>
+          <div class="about-images">
+            <img src="figma-images/about 1.png" class="featured" alt="A Guitar" /><img
+              src="figma-images/about 2.png"
+              alt="A Gaming Console"
+            /><img src="figma-images/about 3.png" alt="A Man on a Hike" />
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <div class="container">
+          <h2 class="footer-text">Get <span>in Touch.</span></h2>
+          <p class="footer-sub">So that we can talk more about..</p>
+
+          <div class="social-media">
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-behance"></i>
+            <i class="fa-brands fa-dribbble"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+
+          <p class="made-by">Made with ❣️ by Srinivas Dezign</p>
+        </div>
+      </div>
+    </main>
+    <script src="index2.js"></script>
+  </body>
+</html>
